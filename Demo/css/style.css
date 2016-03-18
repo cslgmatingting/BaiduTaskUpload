@@ -2,25 +2,25 @@
 /*designed by Fight2016*/
 *{margin: :0;padding:0;}
 .container{width:100%;padding: 20px;box-sizing: border-box;}
-/*清除row浮动*/
-.row{box-sizing: border-box;}
-.row:before{content: "";display: table;clear: both;}
-.row:after{content: "";display: table;clear: both;}
-[class*='col-']{height:50px;float: left;border:1px solid #999;background: #eee;margin:20px 0px 0px 20px;box-sizing: border-box;}
+/*清除浮动*/
+.container:before{content: "";width:0;display: table;clear: both;}
+.container:after{content: "";width:0;display: table;clear: both;}
+.Info{height:50px;outline:1px solid #999;background: #eee;}
+[class*='col-']{float: left;padding: 10px 10px;box-sizing: border-box;}
 /*屏幕宽度>768px*/
 @media only screen and (min-width: 769px) {
-	.col-md-1{width:calc(8.33% - 20px);}
-	.col-md-2{width:calc(16.66% - 20px);}
-	.col-md-3{width:calc(25% - 20px);}
-	.col-md-4{width:calc(33.33% - 20px);}
-	.col-md-6{width:calc(50% - 20px);}
+	.col-md-1{width:8.33%;}
+	.col-md-2{width:16.66%;}
+	.col-md-3{width:25%;}
+	.col-md-4{width:33.33%;}
+	.col-md-6{width:50%;}
 }
 
 /*屏幕宽度<=768px*/
 @media only screen and (max-width: 768px) {
-	.col-sm-2{width:calc(16.66% - 20px);}
-	.col-sm-3{width:calc(25% - 20px);}
-	.col-sm-6{width:calc(50% - 20px);}
-	.col-sm-8{width:calc(66.66% - 20px);}
-	.col-sm-12{width:calc(100% - 20px);}
+	.col-sm-2{width:16.66%;}
+	.col-sm-3{width:25%;}
+	.col-sm-6{width:50%;}
+	.col-sm-8{width:66.66%;}
+	.col-sm-12{width:100%;}
 }
